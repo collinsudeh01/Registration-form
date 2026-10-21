@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: green;
+            color: white;
+            border-radius: 20px;
+
+            padding: 10px;
+            border-color: transparent;
+        }
+        input[type="reset"]{
+            padding: 2px;
+            background-color: red;
+            border-color: transparent;
+        }
+        input[type="submit"]{
+            background-color: green;
+            color: white;
+            border-radius: 20px;
+            width: 30%;
+            margin: 20px;
+            border-color: transparent;
+        }
+        .datadiv{
+            background-color: rgb(253, 255, 253);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 100px;
+            padding-right: 100px;
+            border-radius: 20px;
+            margin: 20px;
+            
+            box-shadow: rgb(151, 179, 155) 2px 2px 20px ;
+            
+        }
+        body{
+            
+            background-color: rgb(0, 94, 0);
+            font-family: Spotify Mix;
+            justify-items: center;
+            background-image: linear-gradient(180deg, green, black);
+        }
+        .card{
+            margin: 20px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            box-shadow: rgb(166, 204, 163) 0px 0px 50px ;
+            width: 50%;
+            min-width: 500px;
+            border-radius: 20px;
+        }
+        input[type="image"]{
+            padding: 5px;
+            border-color: black;
+        }
+        input[type="search"]{
+            padding: 20px;
+            border-radius: 20px;
+            background-color: transparent;
+            margin: 20px;
+            
+        }
+        h3{
+            color: black;
+        }
+        label{
+            color: rgb(59, 66, 58);
+        }
+        input{
+            
+            border-color: rgb(255, 255, 255);
+            background-color: rgb(212, 255, 215);
+            padding: 20px;
+            border-radius: 5px;
+        }
+        input[type="text"]{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 20px;
+            padding-left: 20px;
+            margin: 5px;
+            
+        }
+        
+        h1{
+            font-family: Spotify Mix Black;
+            color: rgb(43, 143, 43);
+            text-shadow:  rgb(160, 255, 160) 0px 0px 5px;
+        }
+        .h1head{
+            font-weight: 100;
+            font-size: 300%;
+            color: black;
+            background-image: linear-gradient(180deg, green, rgb(1, 63, 9));
+            text-shadow: rgb(103, 255, 136) 0px 0px 3px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        
+            <center><h1 class="h1head">Registration  Form</h1></center>
+            <center>
+                <label for="search">Search for field</label>
+                <input type="search" placeholder="search" name="" id="">
+                <button>Go</button>
+            </center>
+            <div class="biodata">
+                
+                <div class="datadiv">
+                <h1>Bio Data</h1>
+                    <hr>    
+                    
+                    <h3>Name</h3>  
+                    <div>
+                        <label for="fname">First Name:</label>
+                        <input type="text" value=""name="Gender">
+                    </div>
+                
+                    <div>
+                        <label for="fname">Middle Name:</label>
+                        <input type="text" value=""name="Gender">
+                    </div>
+
+                    <div>
+                        <label for="fname">Last Name:</label>
+                        <input type="text" value=""name="Gender">
+                    </div>
+                        
+                    
+                    
+                </div>
+
+                <div class="datadiv"><h3>Gender</h3>
+                        <label for="Male" >Male</label>
+                        <input type="radio" name="Gender" id="">
+                        <label for="Female">Female</label>
+                        <input type="radio" name="Gender">
+                </div>
+            <div class="datadiv">
+                <h3>Date of Birth</h3>
+                <div>
+                    <label for="date">Date of Birth</label>
+                    <input type="date" name="" id="">
+                </div>
+                <div>
+                    <label for="number">Age</label>
+                    <input type="number" name="" id="">
+                </div>
+                <div>
+                    <label for="datetime">Time of Birth (Insert Nill if unknown)</label>
+                    <input type="datetime" name="" id=""><br>
+                </div>
+            </div>
+            <div class="datadiv">
+            <label for="datetime">Passport</label>
+            <input type="file" name="id"><br>
+            
+            <h3>Blood Group</h3>
+            <label for="oplus">O+</label>
+            <input type="checkbox" name="bldgrp" id="">
+
+            <label for="A+">A+</label>
+            <input type="checkbox" name="bldgrp">
+
+            <label for="AB">AB</label>
+            <input type="checkbox" name="bldgrp">
+
+            <label for="">B</label>
+            <input type="checkbox" name="bldgrp">
+        </div>
+            
+ 
+        </div>
+        <div class="datadiv">
+            
+            <h1>Preferences and Hobbies</h1>
+            <hr>
+            <div>
+                <label for="fvrtcl">Favourite Colour</label>
+                <input type="color" name="fvrtcl" id="">
+            </div>
+            <div>
+                <label for="datetime">Date time</label>
+                <input type="datetime-local" name="" id="">
+            </div>
+            <div>
+                <label for=""></label>
+                <input type="text" name="" id="">
+            </div>
+            <div>
+            <label for="reset">Reset this section</label>
+            <input type="reset" value="">
+            </div>
+        </div>
+        <div class="datadiv">
+            <h1>Job preferences</h1>
+            <hr>
+            <h3>Occassional Breaks</h3>
+            <div>
+            <label for="month">Annual Leave Date</label>
+                <input type="month" name="" id="">
+                </div>
+            <div><label for="time">Break Time</label>
+                <input type="time" name="" id=""></div>
+            <div><label for="week">Number of weeks</label>
+                <input type="week" name="" id=""></div>
+        </div>
+        <div class="datadiv">
+            
+            <h1>Email and Password</h1>
+            <hr>
+            <div>
+            <label for="email">New Email</label>
+            <input type="email">
+            </div>
+            <div>
+            <label for="password">New Password</label>
+            <input type="password">
+            </div>
+            <div>
+            <label for="reset">Reset this section</label>
+            <input type="reset" value="">
+            </div>
+        </div>
+        <div class="datadiv">
+            <h1>Contact and Address</h1>
+            <hr>
+            <label for="tel">Phone Number</label>
+            <input type="tel" name="" id="">
+            <label for="url">portfolio website</label>
+            <input type="url" name="" id="">
+            <label for="reset">Reset this section</label>
+            <input type="reset" value="">
+        </div>
+        <div class="datadiv">
+            <h1>Survey (Optional)</h1>
+                <small>This survey is for statistical purposes</small>
+                <div><label for="datetime">Exact Date and time of Birth</label>
+                <input type="datetime-local"></div>
+                <div><input type="hidden" name=""></div>
+                <div><label for="range">Total Screen Time Today</label>
+                <div><input type="range" name="" id=""></div>
+                <div><label for="">A picture of your in your gallery</label>
+                <input type="image" src="" alt=""></div>
+
+        </div>
+        <div>
+            <center><input type="submit" value="Signup"></center>
+            
+        </div>
+
+    </div>
+</body>
+</html>
